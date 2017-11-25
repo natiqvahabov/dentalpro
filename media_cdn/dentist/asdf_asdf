@@ -1,0 +1,441 @@
+
+<style>
+      #legend {
+        font-family: Arial, sans-serif;
+        background: rgba(255,255,255,0.7);
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid #000;
+      }
+      #legend h3 {
+        margin-top: 0;
+      }
+      #legend img {
+        vertical-align: middle;
+      }
+</style>
+
+<!-- <style>
+/* =============================================
+* RADIO BUTTONS
+=============================================== */
+
+#radios label {
+  cursor: pointer;
+  position: relative;
+}
+
+#radios label + label {
+  margin-left: 15px;
+}
+
+input[type="radio"] {
+  opacity: 0; /* hidden but still tabable */
+  position: absolute;
+}
+
+input[type="radio"] + span {
+  font-family: 'Material Icons';
+  color: #B3CEFB;
+  border-radius: 50%;
+  padding: 12px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+
+input[type="radio"]:checked + span {
+  color: #D9E7FD;
+  background-color: #4285F4;
+}
+
+input[type="radio"]:focus + span {
+  color: #fff;
+}
+
+/* ================ TOOLTIPS ================= */
+
+#radios label:hover::before {
+  content: attr(for);
+  font-family: Roboto, -apple-system, sans-serif;
+  text-transform: capitalize;
+  font-size: 11px;
+  position: absolute;
+  top: 170%;
+  left: 0;
+  right: 0;
+  opacity: 0.75;
+  background-color: #323232;
+  color: #fff;  
+  padding: 4px;
+  border-radius: 3px;
+  display: block;
+}
+
+/* =============================================
+* CENTERING, CONTAINER STYLING ETC || IGNORE
+=============================================== */
+
+h1{
+  font-weight: 300;
+  color: #D9E7FD;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#radios {
+  text-align: center;
+  margin 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+</style> -->
+
+<section id="header-title">
+   <div class="mt-shadow">
+      <div class="container">
+         <div class="row  mt-title wpb_animate_when_almost_visible wpb_top-to-bottom wpb_start_animation">
+            <div class="col-md-8 ">
+               <h1 style="text-align: left !important">Our Clinics</h1>
+            </div>
+            <div class="col-md-4 ">
+               <h2>DentalTourism</h2>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<div id="mb-content">
+</br>
+   <div class="container">
+      <div class="row">
+        <div class="col-md-12 center">
+            <div ng-init="">               
+            </div>
+
+            <div class="mt_style_row row " style="  text-align:left;">
+            <div class="container mt-madza-container">
+               <div class="row">
+                  <div class="wpb_column vc_column_container vc_col-sm-12">
+                     <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                           <div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_top-to-bottom top-to-bottom wpb_start_animation animated">
+                              <div class="wpb_wrapper">
+                                 <!-- <h1 style="text-align: center;"><span style="color: #000000;">Our Clinics</span></h1> -->
+
+<!--                                  <div class="container">
+                                  <h1><span>Google maps radio buttons CSS only</span></h1>
+                                  <div id="radios">
+                                    <label for="driving" class="material-icons">
+                                      <input type="radio" name="mode" id="driving" value="dentist" checked/>
+                                      <span></span>
+                                    </label>                
+                                    <label for="cycling" class="material-icons">
+                                      <input type="radio" name="mode" id="cycling" value="clinic" />
+                                      <span></span>
+                                    </label>
+                                  </div>
+                                </div> -->
+                                 <h3 style="text-align: center;">
+                                 <label class="">
+                                    <div id="map" style="width:800px;height:600px;margin-top: 20px;">... Google Map Loading ...</div>
+                                    <div id="legend"><h3>Info</h3></div>
+                                 </label>
+                                 <span style="color: #888888;"><a href="http://medical.madza-wordpress-premium-themes.com/?page_id=27"></a></span>
+                                 </h3>
+                              </div>
+
+                           </div>
+                           <div style="padding-top:15px"></div>
+<!--                            <div class="row grid box-isotop cs-style-3">
+
+                              <div class="col-lg-4 col-md-4 col-sm-6 wpb_animate_when_almost_visible wpb_top-to-bottom top-to-bottom sorting box-isotop-in  wpb_start_animation animated" data-category="portfolio" ng-repeat="clinic in filterClinic = ( {{clinics}} | filter:searchText | limitTo:6) ">
+                                 <figure>
+                                    <a href="http://medicaldoctor.wpengine.com/our-services/diagnosis-with-precise/"><img width="300" height="150" src="/static/Madars%20Bitenieks%20Blog%20_%20Your%20SUPER-powered%20WP%20Engine%20Blog_files/ep_stock_2911-32fby72ia0uk0twtlha2gw.jpg" class="attachment-300x150x1 size-300x150x1 wp-post-image" alt=""></a>
+                                    <figcaption>
+                                       <h3><i class="icon-stethoscope"></i> {% verbatim %} {{clinic.name}} {% endverbatim %}</h3>
+                                       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada f...</p>
+                                       <a href="http://medicaldoctor.wpengine.com/our-services/diagnosis-with-precise/">Read More</a>
+                                    </figcaption>
+                                 </figure>
+                              
+                              </div>
+                        </div> -->
+                     </div> 
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         </div>
+
+      <div class="clear"></div>
+   </div>
+</div>
+</div>
+
+<script>
+
+      if (navigator.geolocation) {
+          // alert('geo');
+          navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else {
+          alert('else');
+          x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+      var latlon, your_lat, your_lng, infoWindow, map, flightPlanCoordinates;
+
+      function showPosition(position) {
+          your_lat  = position.coords.latitude
+          your_lng  = position.coords.longitude
+          var pos = {
+            lat: your_lat,
+            lng: your_lng
+          };
+          map.setCenter(pos)
+      }
+
+      function showError(error) {
+          switch(error.code) {
+              case error.PERMISSION_DENIED:
+                  x.innerHTML = "User denied the request for Geolocation."
+                  break;
+              case error.POSITION_UNAVAILABLE:
+                  x.innerHTML = "Location information is unavailable."
+                  break;
+              case error.TIMEOUT:
+                  x.innerHTML = "The request to get user location timed out."
+                  break;
+              case error.UNKNOWN_ERROR:
+                  x.innerHTML = "An unknown error occurred."
+                  break;
+          }
+      }
+
+      var icons;
+
+
+
+      function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 2,
+              center: new google.maps.LatLng(40,49),
+              // for Baku  
+              // center: {
+              //     lat: your_lat,
+              //     lng: your_lng
+              // },
+              mapTypeId: 'terrain',
+              fullscreenControl:false,
+              styles: [{
+                  "featureType": "administrative",
+                  "elementType": "labels.text.fill",
+                  "stylers": [{
+                      "color": "#444444"
+                  }]
+              }, {
+                  "featureType": "landscape",
+                  "elementType": "all",
+                  "stylers": [{
+                      "color": "#f2f2f2"
+                  }]
+              }, {
+                  "featureType": "poi",
+                  "elementType": "all",
+                  "stylers": [{
+                      "visibility": "off"
+                  }]
+              }, {
+                  "featureType": "road",
+                  "elementType": "all",
+                  "stylers": [{
+                      "saturation": -100
+                  }, {
+                      "lightness": 45
+                  }]
+              }, {
+                  "featureType": "road.highway",
+                  "elementType": "all",
+                  "stylers": [{
+                      "visibility": "simplified"
+                  }]
+              }, {
+                  "featureType": "road.arterial",
+                  "elementType": "labels.icon",
+                  "stylers": [{
+                      "visibility": "off"
+                  }]
+              }, {
+                  "featureType": "transit",
+                  "elementType": "all",
+                  "stylers": [{
+                      "visibility": "off"
+                  }]
+              }, {
+                  "featureType": "water",
+                  "elementType": "all",
+                  "stylers": [{
+                      "color": "#46bcec"
+                  }, {
+                      "visibility": "on"
+                  }]
+              }]
+          });
+
+          icons = {
+              dentist: {
+                  url: '{% static "images/dentist-marker.png" %}', // url
+                  scaledSize: new google.maps.Size(30, 30), // scaled size
+              },
+              clinic: {
+                  url: '{% static "images/clinic-marker.png" %}', // url
+                  scaledSize: new google.maps.Size(30, 30), // scaled size
+              }
+          };
+
+          var legend = document.getElementById('legend');
+          for (var key in icons) {
+              //alert(icons[key].icon)
+              var type = icons[key];
+              var name = key;
+              var icon = type.url;
+              var div = document.createElement('div');
+              div.innerHTML = '<img width="30px" height="30px" src="' + icon + '"> ' + name;
+              legend.appendChild(div);
+          }
+
+          map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
+      }
+
+      var dentistAPI = "http://127.0.0.1:8000/api/dentists";
+
+      jQuery.getJSON(dentistAPI, function(json1) {
+
+          for (var i = 0; i < json1.length; i++) {
+              var obj = json1[i];
+              var myLatlng = new google.maps.LatLng(parseFloat(obj.lat), parseFloat(obj.lng));
+
+              var marker = new google.maps.Marker({
+                  position: myLatlng,
+                  map: map,
+                  icon: icons['clinic'],
+                  data: {
+                      name: obj.name,
+                      city: obj.city,
+                      mobile: obj.mobile,
+                      photo: obj.photo
+                      //link:obj.link
+                  }
+              });
+
+               flightPlanCoordinates = [
+                  {lat: 40, lng: 49},
+                  {lat: obj.lat, lng: obj.lng}
+               ];
+
+              var flightPath = new google.maps.Polyline({
+                path: flightPlanCoordinates,
+                geodesic: true,
+                strokeColor: '#FF0000',
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+              });
+
+              flightPath.setMap(map);
+
+              // listener for markers
+              marker.addListener('click', function() {
+                  //alert(this.data.photo)
+                  var contentString = '<div id="content">' +
+                      '<div id="siteNotice">' +
+                      '</div>' +
+                      '<h2 id="firstHeading" class="firstHeading">' + this.data.name + '</h2>' +
+                      '<div id="bodyContent">' +
+                      '<p><b>' + this.data.name + '</b>, ' + this.data.city + '</p>' +
+                      '<img width="200px" height="200px" src="' + this.data.photo + '"/>' +
+                      '<p><b>' + this.data.mobile + '</b></p>' +
+                      '<p>more: <a href="https://en.wikipedia.org/w/index.php?title=' + this.data.name + '">' +
+                      'https://en.wikipedia.org/w/index.php?title=' + this.data.name + '</a> ' +
+                      '</div>' +
+                      '</div>';
+
+                  // info for marker
+                  infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                  });
+
+                  infowindow.open(map, this);
+
+              });
+          }
+      })
+
+      var clinicsAPI = "http://127.0.0.1:8000/api/clinics";
+
+      jQuery.getJSON(clinicsAPI, function(json2) {
+
+          for (var i = 0; i < json2.length; i++) {
+              var obj = json2[i];
+              var myLatlng = new google.maps.LatLng(parseFloat(obj.lat), parseFloat(obj.lng));
+
+              var marker = new google.maps.Marker({
+                  position: myLatlng,
+                  map: map,
+                  icon: icons['dentist'],
+                  data: {
+                      name: obj.name,
+                      city: obj.city,
+                      mobile: obj.mobile,
+                      photo: obj.photo
+                      //link:obj.link
+                  }
+              });
+
+              flightPlanCoordinates = [
+                  {lat: 40, lng: 49},
+                  {lat: obj.lat, lng: obj.lng}
+               ];
+
+              var flightPath = new google.maps.Polyline({
+                path: flightPlanCoordinates,
+                geodesic: true,
+                strokeColor: 'green',
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+              });
+
+              flightPath.setMap(map);
+
+              // listener for markers
+              marker.addListener('click', function() {
+                  //alert(this.data.photo)
+                  var contentString = '<div id="content">' +
+                      '<div id="siteNotice">' +
+                      '</div>' +
+                      '<h2 id="firstHeading" class="firstHeading">' + this.data.name + '</h2>' +
+                      '<div id="bodyContent">' +
+                      '<p><b>' + this.data.name + '</b>, ' + this.data.city + '</p>' +
+                      '<img width="200px" height="200px" src="' + this.data.photo + '"/>' +
+                      '<p><b>' + this.data.mobile + '</b></p>' +
+                      '<p>more: <a href="https://en.wikipedia.org/w/index.php?title=' + this.data.name + '">' +
+                      'https://en.wikipedia.org/w/index.php?title=' + this.data.name + '</a> ' +
+                      '</div>' +
+                      '</div>';
+
+                  // info for marker
+                  var infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                  });
+
+                  infowindow.open(map, this);
+
+              });
+          }
+      });
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ6527kndKk3QKfO6DmWBatt0jCLX9JFg&callback=initMap">
+</script>
